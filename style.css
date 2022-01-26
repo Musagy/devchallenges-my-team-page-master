@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'PT Serif', serif; */
+
+*{
+  margin: 0;
+}
+body{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 250px 900px 100px;
+  margin: 0px 35px;
+}
+img{
+  width: 240px;
+  height: 350px;
+}
+header{
+  position: relative;
+  top: 20px;
+  max-width: 950px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+header h1{
+  width: 70%;
+  font-family: 'PT Serif', serif;  
+  font-weight: bold;
+  font-size: 36px;
+}
+header h2{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+header p{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+main{
+  display: flex;
+  gap: 0px 120px;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+}
+.member{
+  position: relative;
+}
+.member h3{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.member h4{
+  writing-mode:vertical-rl;
+  position: absolute;
+  white-space:nowrap;
+  top:0;
+  right: -20px;
+
+  font-family: 'PT Serif', serif;  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+.member-2, .member-5{
+  align-self: flex-end
+}
+footer{
+  color: #A9A9A9;
+  align-self: end;
+  margin: 15px;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+@media only screen and (max-width: 1040px) {
+  body {
+    grid-template-rows: 300px 1350px 100px;
+  }
+  header{    
+    gap: 20px;
+  }
+  header div{
+    max-width: 325px;
+  }
+  main{
+    max-width: 850px;
+    display: flex;
+    gap: 0px 70px;
+  }
+  .member-5{
+    align-self: flex-start
+  }
+  .member-4, .member-6{
+    align-self: flex-end
+  }
+}
+@media only screen and (max-width: 639px) {
+  body {
+    grid-template-rows: 400px 700px 100px;
+    margin: 0px 20px;
+  }
+  img{
+    width: 120px;
+    /* 4.8x5x10 2.4 */
+    height: 175px;
+    /* 7x5x10 3.5 */
+    /* scale: 200%; */
+    /* width: ; */
+  }
+  main{
+    max-width: 400px;
+  }
+  header{
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .member h3{
+    font-size: 14px;
+  }
+  .member h4{
+    right: -13px;
+    font-size: 9px;
+  }
+}
